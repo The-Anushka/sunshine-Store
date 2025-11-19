@@ -1,34 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NHWTXT9Q');</script>
-<!-- End Google Tag Manager -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - Sunshine Store</title>
-    <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sunshine Store — Products</title>
+
+  <!-- GTM -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NHWTXT9Q');</script>
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHWTXT9Q"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<h1>Our Products</h1>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHWTXT9Q"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<nav>
-    <a href="index.html">Home</a> |
-    <a href="products.html">Products</a> |
-    <a href="cart.html">Cart</a> |
-    <a href="payment.html">Payment</a> |
-    <a href="contact.html">Contact Us</a>
-</nav>
+  <header class="site-header">
+    <div class="brand"><a href="index.html">☀️ Sunshine Store</a></div>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="product.html">Products</a>
+      <a href="cart.html">Cart</a>
+      <a href="payment.html">Payment</a>
+    </nav>
+  </header>
 
-<p>Product list will come here.</p>
+  <main>
+    <section class="products-page">
+      <h1>Our Products</h1>
+      <div class="grid">
+        <!-- Product 1 -->
+        <article class="product-card">
+          <img src="https://images.pexels.com/photos/3822625/pexels-photo-3822625.jpeg" alt="product one">
+          <h3>Sunrise Meditation Kit</h3>
+          <p class="price">₹899</p>
+          <p class="desc">Beginner-friendly kit with guided audio and incense.</p>
+          <button class="btn add-cart" data-id="kit-1" data-name="Sunrise Meditation Kit" data-price="899">Add to Cart</button>
+        </article>
 
+        <!-- Product 2 -->
+        <article class="product-card">
+          <img src="https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg" alt="product two">
+          <h3>Crystal Healing Pack</h3>
+          <p class="price">₹599</p>
+          <p class="desc">A set of 5 healing crystals for balance and calm.</p>
+          <button class="btn add-cart" data-id="crystal-1" data-name="Crystal Healing Pack" data-price="599">Add to Cart</button>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card">
+          <img src="https://images.pexels.com/photos/1051839/pexels-photo-1051839.jpeg" alt="product three">
+          <h3>Mindful Journal</h3>
+          <p class="price">₹299</p>
+          <p class="desc">Daily prompts to build gratitude and presence.</p>
+          <button class="btn add-cart" data-id="journal-1" data-name="Mindful Journal" data-price="299">Add to Cart</button>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © 2025 Sunshine Store
+  </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
