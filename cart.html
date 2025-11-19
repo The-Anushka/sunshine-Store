@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-NHWTXT9Q');</script>
-<!-- End Google Tag Manager -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart - Sunshine Store</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sunshine Store — Cart</title>
+
+  <!-- GTM -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-NHWTXT9Q');</script>
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHWTXT9Q"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<h1>Your Cart</h1>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NHWTXT9Q"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
-<nav>
-    <a href="index.html">Home</a> |
-    <a href="products.html">Products</a> |
-    <a href="cart.html">Cart</a> |
-    <a href="payment.html">Payment</a> |
-    <a href="contact.html">Contact Us</a>
-</nav>
+  <header class="site-header">
+    <div class="brand"><a href="index.html">☀️ Sunshine Store</a></div>
+    <nav class="nav"><a href="index.html">Home</a><a href="product.html">Products</a><a href="cart.html">Cart</a></nav>
+  </header>
 
-<p>Cart items will come here.</p>
+  <main>
+    <section class="cart-page">
+      <h1>Your Cart</h1>
+      <div id="cart-list" class="cart-list">
+        <!-- JS will populate items here -->
+      </div>
 
+      <div id="cart-summary" class="cart-summary hidden">
+        <p>Total: <span id="cart-total">₹0</span></p>
+        <a href="payment.html" class="btn primary" id="checkout-btn">Proceed to Payment</a>
+      </div>
+
+      <p id="empty-msg">Your cart is empty — <a href="product.html">shop now</a>.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">© 2025 Sunshine Store</footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
